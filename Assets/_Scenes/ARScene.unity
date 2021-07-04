@@ -474,7 +474,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerHead: {fileID: 1332306316}
-  BlueCarObject: {fileID: 991421926}
+  BlueCarObject: {fileID: 1160405007}
+  VRObjs:
+  - {fileID: 1845349634}
+  - {fileID: 1677138651}
+  - {fileID: 669154441}
+--- !u!1 &669154441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013829830258, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850769909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &675201388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -532,12 +542,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
---- !u!4 &991421926 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 657483758804205915, guid: 939003414f421974485f41841de25384,
-    type: 3}
-  m_PrefabInstance: {fileID: 1347726471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1003325670
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +715,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150139989}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1160405007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1753847233777046990, guid: 939003414f421974485f41841de25384,
+    type: 3}
+  m_PrefabInstance: {fileID: 1347726471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1208236551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1285,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locked: 0
   markerActive: 1
+--- !u!1 &1677138651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850769909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1714385368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,6 +1457,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 069e752a2ad432d48bc22c5114c8386d, type: 3}
+--- !u!1 &1845349634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850769909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1850769909
 PrefabInstance:
   m_ObjectHideFlags: 0
