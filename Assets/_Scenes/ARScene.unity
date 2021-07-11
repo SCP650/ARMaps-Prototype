@@ -1509,6 +1509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1605,5 +1609,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72605e9cff67a1848b5b651443cc4fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarNum: 0
+  CarNum: 2
   Player: {fileID: 1850769910}

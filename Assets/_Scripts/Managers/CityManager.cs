@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class CityManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject[] Cars;
+    private void Start()
     {
-        
+        UpdatePlayerLocation();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdatePlayerLocation()
     {
-        
+        Debug.Log("Try to change location");
+        GameObject player =  GameObject.FindGameObjectsWithTag("Player")[0];
+        if (player)
+        {
+            player.transform.parent = Cars[GameManager.Instance.CarNum].transform;
+            player.transform.localPosition = Vector3.zero;
+        }
     }
 }
