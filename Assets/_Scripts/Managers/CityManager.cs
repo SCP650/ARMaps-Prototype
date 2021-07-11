@@ -17,7 +17,7 @@ public class CityManager : MonoBehaviour
         if (player)
         {
             player.transform.parent = Cars[GameManager.Instance.CarNum].transform;
-            player.transform.localPosition = Vector3.zero;
+            player.transform.localPosition = new Vector3(0,-0.5f,0);
         }
     }
 }
