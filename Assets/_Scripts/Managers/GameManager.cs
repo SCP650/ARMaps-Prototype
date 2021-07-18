@@ -2,25 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Valve.VR;
 
 public class GameManager : GenericSingletonClass<GameManager>
 {
     public int CarNum;
     public GameObject Player;
 
-    public void SetCarNumber(int num)
-    {
-        CarNum = num;
-    }
-
     public void GoToVRScene()
     {
-        SceneManager.LoadScene(SceneNames.VRScene);
+        SteamVR_LoadLevel.Begin(SceneNames.VRScene);
+        //SceneManager.LoadScene(SceneNames.VRScene);
+    
     }
 
     public void GoToARScene()
     {
-        SceneManager.LoadScene(SceneNames.ARScene);
+        SteamVR_LoadLevel.Begin(SceneNames.ARScene);
+        //SceneManager.LoadScene(SceneNames.ARScene);
     }
 
 }
