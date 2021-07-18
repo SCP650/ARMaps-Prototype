@@ -12,6 +12,7 @@ public class GameManager : GenericSingletonClass<GameManager>
     public void GoToVRScene()
     {
         SteamVR_LoadLevel.Begin(SceneNames.VRScene);
+        Messenger.Broadcast("ZoomUpMap");
         //SceneManager.LoadScene(SceneNames.VRScene);
     
     }
