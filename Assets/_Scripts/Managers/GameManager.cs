@@ -12,7 +12,7 @@ public class GameManager : GenericSingletonClass<GameManager>
     private void Start()
     {
 
-        StartCoroutine("ShowAlert");
+        //StartCoroutine("ShowAlert");
     }
 
 
@@ -39,11 +39,11 @@ public class GameManager : GenericSingletonClass<GameManager>
         cameraFade.StartAnimation(new Color(0, 0, 0, 1));
     }
 
-    private IEnumerator ShowAlert()
-    {
-        yield return new WaitForSeconds(10);
-        Messenger<int>.Broadcast(GameEvents.AlertCar, 3);
-    }
+    //private IEnumerator ShowAlert()
+    //{
+    //    yield return new WaitForSeconds(10);
+    //    Messenger<int>.Broadcast(GameEvents.AlertCar, 3);
+    //}
 }
 
 struct SceneNames
