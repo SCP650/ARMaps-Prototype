@@ -27,6 +27,10 @@ public class InputManager : MonoBehaviour
         {
             GameManager.Instance.GoToARScene();
         }
+        else
+        {
+            Messenger<int>.Broadcast(GameEvents.AlertCar, Random.Range(0,4));
+        }
      
     }
 }
