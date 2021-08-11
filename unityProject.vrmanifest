@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.armap.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\Github\\ARMaps-Prototype\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\apl-vr\\Documents\\Projects\\2021-Maps\\ARMaps-Prototype\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "ARMap [Testing]"
