@@ -27,6 +27,10 @@ public class GameManager : GenericSingletonClass<GameManager>
         //SceneManager.LoadScene(SceneNames.VRScene);
     
     }
+    public string GetCurrentSceneName()
+    {
+        return SceneManager.GetActiveScene().name;
+    }
 
     public void GoToARScene()
     {
