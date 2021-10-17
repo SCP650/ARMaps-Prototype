@@ -52,8 +52,8 @@ public class GameManager : GenericSingletonClass<GameManager>
 
 struct SceneNames
 {
-   public const string VRScene = "CityScene"; 
-   public const string ARScene = "ARScene";
+   public const string VRScene = "MapScene"; 
+   public const string ARScene = "ARInDoorScene";
 }
 
 struct GameEvents
