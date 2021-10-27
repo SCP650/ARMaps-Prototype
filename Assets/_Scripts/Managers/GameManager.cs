@@ -8,6 +8,7 @@ using Valve.VR;
 public class GameManager : GenericSingletonClass<GameManager>
 {
     public int CarNum;
+    public GameObject[] cars;
 
     private void Start()
     {
