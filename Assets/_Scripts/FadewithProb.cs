@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class FadewithProb : MonoBehaviour
 {
     public AnimationCurve prob;
     public MeshRenderer[] meshes;
+    public Gradient gradient;
+    public TextMeshProUGUI text;
+    public Image bg;
     public int maxFadeTime;
 
     private void Start()
@@ -19,7 +24,10 @@ public class FadewithProb : MonoBehaviour
         while(t < maxFadeTime)
         {
             t += Time.deltaTime;
-            float val = prob.Evaluate(t / maxFadeTime);
+            float ratio = t / maxFadeTime;
+            float val = prob.Evaluate(ratio);
+            text.text = $"{Mathf.Round(val*100)}%";
+            bg.color = gradient.Evaluate(ratio);
             foreach(MeshRenderer m in meshes){
                 Color color = m.material.color;
                 color.a = val;

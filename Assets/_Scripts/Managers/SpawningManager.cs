@@ -16,7 +16,7 @@ public class SpawningManager : GenericSingletonClass<SpawningManager>
         GameObject obj = Instantiate(detectableObjects[objID],cars[carID].transform);
         obj.transform.localPosition = location;
         obj.transform.parent = mapRoot;
-        obj.transform.localScale = Vector3.one;
+        //obj.transform.localScale = Vector3.one;
         history.Add((objID, obj.transform.localPosition));
     }
 }
