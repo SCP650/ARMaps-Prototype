@@ -25,11 +25,16 @@ public class SpawnerTester : MonoBehaviour
         }
         else
         {
+            int item = 0;
             while (true)
             {
+                if(item >= 7)
+                {
+                    item = 0;
+                }
                 yield return new WaitForSeconds(setFixInterval);
-                SpawningManager.Instance.SpawnObject(Random.Range(0, 4), Random.Range(0, 7), new Vector3(1, 0, 0));
-
+                SpawningManager.Instance.SpawnObject(1, item, new Vector3(0.5f, 0, 0));
+                item += 1;
             }
         }
     
