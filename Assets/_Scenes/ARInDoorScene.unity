@@ -1176,6 +1176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeapHandController
       objectReference: {fileID: 0}
+    - target: {fileID: 166326, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 432918, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1464,6 +1468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HandModels
+      objectReference: {fileID: 0}
+    - target: {fileID: 6904635725594440572, guid: 2653340a93d5f814895958c9b6c2fa8b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6904635725594440573, guid: 2653340a93d5f814895958c9b6c2fa8b,
         type: 3}
@@ -4783,7 +4792,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1850813335
 GameObject:
   m_ObjectHideFlags: 0

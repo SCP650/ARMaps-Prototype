@@ -9,11 +9,13 @@ public class GameManager : GenericSingletonClass<GameManager>
 {
     public int CarNum;
     public GameObject[] cars;
+    public Transform playerHead;
 
     private void Start()
     {
 
         //StartCoroutine("ShowAlert");
+        playerHead = GameObject.FindGameObjectsWithTag("PlayerHead")[0].transform;
     }
 
 
