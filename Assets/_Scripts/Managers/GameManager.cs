@@ -8,11 +8,14 @@ using Valve.VR;
 public class GameManager : GenericSingletonClass<GameManager>
 {
     public int CarNum;
+    public GameObject[] cars;
+    public Transform playerHead;
 
     private void Start()
     {
 
         //StartCoroutine("ShowAlert");
+        playerHead = GameObject.FindGameObjectsWithTag("PlayerHead")[0].transform;
     }
 
 
@@ -26,6 +29,10 @@ public class GameManager : GenericSingletonClass<GameManager>
         Messenger.Broadcast(GameEvents.ZoomUpMap);
         //SceneManager.LoadScene(SceneNames.VRScene);
     
+    }
+    public string GetCurrentSceneName()
+    {
+        return SceneManager.GetActiveScene().name;
     }
 
     public void GoToARScene()
@@ -48,8 +55,8 @@ public class GameManager : GenericSingletonClass<GameManager>
 
 struct SceneNames
 {
-   public const string VRScene = "CityScene"; 
-   public const string ARScene = "ARScene";
+   public const string VRScene = "MapScene"; 
+   public const string ARScene = "ARInDoorScene";
 }
 
 struct GameEvents

@@ -15,7 +15,7 @@ public class CityManager : MonoBehaviour
 
     public void UpdatePlayerLocation()
     {
-        Debug.Log("Try to change location");
+  
         GameObject player =  GameObject.FindGameObjectsWithTag("Player")[0];
         if (player)
         {
